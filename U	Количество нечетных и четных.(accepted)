@@ -1,0 +1,9 @@
+num=input()
+odd=[]
+even=[]
+for n in num:
+  if int(n)%2!=0:
+    odd.append(n)
+  else:
+    even.append(n)
+print(len(odd),len(even)) 

@@ -1,0 +1,14 @@
+n=input()
+checker=False
+yesno=False
+rang=range(1,1000000)
+count=0
+if n.isdigit()==True and int(n) in rang and n[count]!='0':
+  checker=True
+if checker==True:
+    while len(n)!=1:
+      if n[count]==n[count+1]:
+        yesno=True
+        break
+      else:
+        n=n.replace(n[count],'')

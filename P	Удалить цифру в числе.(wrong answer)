@@ -1,0 +1,8 @@
+try:
+  a=input()
+  b=input()
+  if int(a)>=1 and int(a)<=10**9 and b in a:
+    a=(a.replace(b,''))
+    print(a)
+except:
+  ValueError

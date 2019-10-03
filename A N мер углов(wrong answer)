@@ -1,0 +1,33 @@
+N=input()
+angles=[a for a in input().split(' ')]
+checker1=False
+checker2=False
+checker3=True
+total=0
+Nrange=range(3,361)
+angrange=range(0,181)
+for angs in angles:
+    if angs.isdigit()==True and int(angs) in angrange:
+        angs=int(angs)
+        total=total+angs
+        checker1=True
+
+    else:
+        checker=False
+        break
+if N.isdigit()==True and int(N) in Nrange:
+    N=int(N)
+    checker2=True
+else:
+    checker2=False
+for i in angles:
+    if int(i)==0:
+        checker3=False
+        break
+if checker1==True and checker2==True:
+    if total==180*(N-2) and checker3!=False :
+        print(total)
+        print('Yes')
+    else:
+        print(total)
+        print('No')

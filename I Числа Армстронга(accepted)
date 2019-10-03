@@ -1,0 +1,5 @@
+for i in range(100,999):
+  a=str(i)
+  po=len(a)
+  if ((int(a[0]))**po+(int(a[1]))**po+(int(a[2]))**po)==i:
+    print(i)

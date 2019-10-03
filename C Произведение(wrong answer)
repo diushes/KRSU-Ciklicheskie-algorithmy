@@ -1,0 +1,25 @@
+nums=[a for a in input().split(' ')]
+checker1=False
+result=0
+rang=range(-10000,10000,1)
+if len(nums)==2:
+    for i in nums:
+        if i.lstrip('-').isdigit()==True and int(i) in rang:
+            checker1=True
+            i=int(i)
+        else:
+            checker1=False
+            break
+if checker1==True:
+  if int(nums[0])>0 and int(nums[1])>0:
+    for n in range(int(nums[1])):
+      result=result+int(nums[0])
+
+  elif int(nums[0])<0 and int(nums[1])<0:
+    for n in range(abs(int(nums[1]))):
+      result = result + abs(int(nums[0]))
+
+  else:
+    for n in range(abs(int(nums[1]))):
+      result=result+(abs(int(nums[0]))*(-1))
+  print(nums[0],'*','(',nums[1],')','=',result)

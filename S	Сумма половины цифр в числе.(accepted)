@@ -1,0 +1,11 @@
+num=input()
+d=[]
+d2=[]
+for n in num:
+  d.append(int(n))
+if len(num)%2==0:
+  for i in range((len(d))//2):
+    d2.append(d[i])
+  print(sum(d2))
+else:
+  print(sum(d))

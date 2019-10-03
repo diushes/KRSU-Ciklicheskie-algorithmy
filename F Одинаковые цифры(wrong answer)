@@ -12,3 +12,8 @@ if checker==True:
         break
       else:
         n=n.replace(n[count],'')
+if checker==True and yesno==True:
+  print('YES')
+elif checker==True and yesno==False:
+  print('NO')
+      

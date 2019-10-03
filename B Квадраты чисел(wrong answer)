@@ -1,0 +1,13 @@
+nums=[a for a in input().split(' ')]
+checker=False
+for n in nums:
+    if n.isdigit()==True and int(n)>0:
+        n=int(n)
+        checker=True
+    else:
+        checker=False
+        break
+      
+if len(nums)==2 and checker==True and int(nums[1])>int(nums[0]) and int(nums[1])<1000:
+    for i in range(int(nums[0]),(int(nums[1]))+1):
+        print(i,'*',i,'=',i*i)

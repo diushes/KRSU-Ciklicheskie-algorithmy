@@ -1,0 +1,13 @@
+n=input()
+rang=range(1,1000000)
+yesno=False
+if n.isdigit()==True and int(n) in rang and n[0]!='0':
+  for d in n:
+    c=n.count(d)
+    if c>1:
+      yesno=True
+      break
+  if yesno==True:
+    print('YES')
+  else:
+    print('NO')

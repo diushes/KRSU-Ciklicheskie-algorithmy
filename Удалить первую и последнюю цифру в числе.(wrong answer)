@@ -1,0 +1,6 @@
+n=input()
+if int(n)>=1 and int(n)<=10**9:
+  
+  n=n.replace(n[-1],'')
+  n=n.replace(n[0],'')
+  print(n)

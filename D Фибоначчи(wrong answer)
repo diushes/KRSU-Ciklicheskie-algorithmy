@@ -1,0 +1,16 @@
+
+fib=int(input())
+d=[0,1]
+if fib>=-10000 and fib<=10000:
+    if fib>0:
+        for i in range(fib):
+          s=d[i]+d[i+1]
+          if s>=fib:
+            print(sum(d))
+            break
+          
+          d.append(s)
+           
+
+    else:
+        print('ERROR')

@@ -1,0 +1,12 @@
+n=input()
+checker=False
+rang=range(1,1000000)
+summa=[]
+if n.isdigit()==True and int(n) in rang:
+  checker=True
+
+if checker==True:
+  for element in n:
+    element=int(element)
+    summa.append(element)
+  print(sum(summa))  

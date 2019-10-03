@@ -1,0 +1,6 @@
+n=input()
+for element in n:
+  if int(element)%2==0:
+    n=n.replace(element,'')
+  
+print(n)
